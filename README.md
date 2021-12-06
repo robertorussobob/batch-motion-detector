@@ -20,6 +20,6 @@ Usage example
 $ sudo mkdir /mnt/surveillance
 $ sudo mount -t cifs -o uid=vagrant,username=<username> //<ip>/surveillance /mnt/surveillance
 $ sudo mkdir /mnt/surveillance/motion
-$ find /mnt/surveillance/cam -type 'f' -name '*.mp4' | /vagrant/process /mnt/surveillance /mnt/surveillance/motion
+$ find /mnt/surveillance/cam -type 'f' -name '*.mp4' | sort -V | uniq | /vagrant/process /mnt/surveillance /mnt/surveillance/motion
 ```
 
