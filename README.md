@@ -10,7 +10,7 @@ for each video file:
 Than you can remove the original video files.
 
 1. It use dvr-scan for motion detection and video production;
-1. than use ffmprg to encode the video using x264;
+1. than use ffmpeg to encode the video using x264;
 1. the original file basename is kept.
 
 Usage example
