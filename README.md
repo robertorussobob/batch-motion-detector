@@ -21,4 +21,5 @@ $ sudo mkdir /mnt/surveillance
 $ sudo mount -t cifs -o uid=vagrant,username=<username> //<ip>/surveillance /mnt/surveillance
 $ sudo mkdir /mnt/surveillance/motion
 $ find /mnt/surveillance/cam -type 'f' -name '*.mp4' | sort -V | uniq | /vagrant/process /mnt/surveillance/motion
+$ find /mnt/surveillance/motion -type 'f' -name '*.avi' | sort -V | uniq | parallel --verbose -j 4 --ungroup ffmpeg -loglevel quiet -y -i {} -c:v libx264 -c:a copy /mnt/surveillance/motion/{/.}.mp4
 ```
