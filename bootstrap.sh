@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 apt update
-sudo apt install python3.7 python3-pip ffmpeg -y
+sudo apt install python3.7 python3-pip parallel ffmpeg -y
 python3 -m pip install --upgrade pip
 pip3 install dvr-scan[opencv,progress_bar]
+sudo apt install ffmpeg -y
 # getting to get Linux HandBrake is a hell of "error while loading shared libraries"
 # so, atm, it's better to use the host's Windows Portable version
 #sudo apt install parallel flatpak -y
