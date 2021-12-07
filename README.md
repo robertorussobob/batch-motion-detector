@@ -7,7 +7,7 @@
 The main purpose is to **keep** the **motion-detected parts** only and then **get rid** of the **original files**, reclaiming much **storage space**.
 
 For each video file:
-  estract a new video file that contains frames where motion is detected.
+  extract a new video file that contains frames where motion is detected.
 
 Than you can remove the original video files.
 
