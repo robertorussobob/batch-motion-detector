@@ -2,15 +2,17 @@
 
 ## A Vagrant box to batch-process surveillance video
 
-The main purpose is to keep the motion-detected parts only and then get rid of the original files, reclaiming much storage space.
+![screenshot](./batch-motion-detector.png)
 
-for each video file:
+The main purpose is to **keep** the **motion-detected parts** only and then **get rid** of the **original files**, reclaiming much **storage space**.
+
+For each video file:
   estract a new video file that contains frames where motion is detected.
 
 Than you can remove the original video files.
 
-1. It use dvr-scan for motion detection and video production;
-1. than use ffmpeg to encode the video using x264;
+1. It use **dvr-scan** for motion detection and video production;
+1. than use **ffmpeg** to encode the video using x264;
 1. the original file basename is kept.
 
 Usage example
