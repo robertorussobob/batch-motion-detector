@@ -84,7 +84,7 @@ Vagrant.configure("2") do |config|
   
     # Customize the amount of memory on the VM:
     vb.memory = "16384"
-    vb.cpus = "16"
+    vb.cpus = "28"
     #vb.memory = "4096"
     #vb.cpus = "4"
     vb.customize ["modifyvm", :id, "--ioapic", "on"]
